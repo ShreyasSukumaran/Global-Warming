@@ -1,0 +1,124 @@
+@import 'config';
+// @import 'responsiveness';
+body {
+    margin: 0;
+    font-family: 'lato', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: $desc-width;
+    margin: 0 auto;
+}
+
+@mixin background-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100vw;
+    min-height: $img-height;
+}
+
+.hero {
+    color: $color-white;
+    min-height: $img-height;
+    font-weight: set-font-weight('black');
+    .container {
+        position: relative;
+        height: $img-height;
+    }
+    &__img {
+        background-image: url("https://i.ibb.co/rcxWVdP/hero-image.jpg");
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        @include background-image;
+    }
+    &__text {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__header {
+        font-size: $font-size-header;
+        width: 248px;
+        line-height: $font-size-header;
+    }
+    &__header-small {
+        font-size: $font-size-desc;
+        width: 248px;
+    }
+}
+
+.info {
+    &__desc {
+        font-size: $font-size-desc;
+        font-weight: set-font-weight('regular');
+        color: $color-black;
+        margin: 80px 0 0;
+        text-align: justify;
+        &-bold {
+            font-weight: set-font-weight('bold');
+        }
+    }
+    &__quote {
+        font-size: $font-size-quote;
+        font-weight: set-font-weight('medium');
+        margin: 54px 0 0;
+    }
+    &__quote-author {
+        font-size: $font-size-quote;
+        font-weight: set-font-weight('medium');
+        text-align: right;
+        margin: 10px 0 0;
+    }
+}
+
+.planet-chance {
+    position: relative;
+    min-height: $footer-img-height;
+    margin: $img-margin;
+    &__img {
+        background-image: url("https://i.ibb.co/fdpyTJN/1p1c.jpg");
+        @include background-image;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        height: $footer-img-height;
+        background-position: center;
+    }
+    &__text {
+        color: $color-white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        &__title {
+            font-size: $font-size-header;
+            width: 275px;
+            line-height: 57px;
+        }
+        &__sub {
+            font-size: $font-size-desc;
+            width: 275px;
+        }
+    }
+}
+
+.climate-change {
+    background-image: url("https://i.ibb.co/F0K6XmM/climate-change.jpg");
+    @include background-image;
+    margin: $img-margin;
+}
+
+.sea-level {
+    background-image: url("https://i.ibb.co/jLbdVgx/sea-level.jpg");
+    @include background-image;
+    margin: $img-margin;
+}
+
+.plastic-ocean {
+    background-image: url("https://i.ibb.co/MNjtWY0/plastic-ocean.jpg");
+    @include background-image;
+    background-position: top;
+    margin: $img-margin;
+}

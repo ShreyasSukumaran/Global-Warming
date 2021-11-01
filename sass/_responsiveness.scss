@@ -1,0 +1,64 @@
+// @media media-sm {
+//     .hero {
+//         &__img {
+//             background-position: right !important;
+//         }
+//     }
+// }
+// @include media-md {
+//     .hero {
+//         .container {
+//             min-height: $img-height-md !important;
+//         }
+//         min-height: $img-height-md !important;
+//         &__img {
+//             background-position: right !important;
+//             min-height: $img-height-md !important;
+//         }
+//     }
+//     .climate-change {
+//         min-height: $img-height-md !important;
+//     }
+//     .sea-level {
+//         min-height: $img-height-md !important;
+//     }
+//     .plastic-ocean {
+//         min-height: $img-height-md !important;
+//     }
+//     .planet-chance {
+//         min-height: $footer-img-height-md !important;
+//         margin: $img-margin !important;
+//         &__img {
+//             min-height: $footer-img-height-md !important;
+//         }
+//     }
+// }
+// @include media-lg {
+//     .hero {
+//         min-height: $img-height-lg !important;
+//         &__img {
+//             min-height: $img-height-lg !important;
+//         }
+//     }
+//     .climate-change {
+//         min-height: $img-height-lg !important;
+//     }
+//     .sea-level {
+//         min-height: $img-height-lg !important;
+//     }
+//     .plastic-ocean {
+//         min-height: $img-height-lg !important;
+//     }
+//     .planet-chance {
+//         min-height: $footer-img-height-lg !important;
+//         margin: $img-margin !important;
+//         &__img {
+//             height: $footer-img-height-lg !important;
+//         }
+//     }
+// }
+// @include media-xl {
+//     .container {
+//         width: $desc-width-xl !important;
+//     }
+// }

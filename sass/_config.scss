@@ -1,0 +1,54 @@
+$font-size-header: 48px;
+$font-size-desc: 17px;
+$font-size-quote: 30px;
+$color-black: #181818;
+$color-white: #fff;
+$img-height: 460px;
+$img-height-md: 600px;
+$img-height-lg: 700px;
+$desc-width: 84.4%;
+$desc-width-xl: 75%;
+$img-margin: 60px 0 0;
+$footer-img-height: 620px;
+$footer-img-height-md: 720px;
+$footer-img-height-lg: 820px;
+@function set-font-weight($weight) {
+    @if $weight=='black' {
+        @return 900;
+    }
+    @if $weight=='bold' {
+        @return 700;
+    }
+    @if $weight=='medium' {
+        @return 500;
+    }
+    @else {
+        @return 400;
+    }
+}
+
+// @mixin media-sm {
+//     @media (max-width: 768px) {
+//         @content;
+//     }
+// }
+// @mixin media-md {
+//     @media (min-width: 768px) {
+//         @content;
+//     }
+// }
+// @mixin media-lg {
+//     @media (min-width: 1024px) {
+//         @content;
+//     }
+// }
+// @mixin media-xl {
+//     @media (min-width: 1600px) {
+//         @content;
+//     }
+// }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
